@@ -5,9 +5,9 @@
 *     *
 * * * *
 """
-numero = int(input("Introduce un número: "))
-for i in range(numero):
-    if i == 0 or i == numero - 1:
-        print("* " * numero)
+printar=int(input("Introduce el número que va a printar: "))
+for i in range(printar):
+    if i == 0 or i == printar - 1:
+        print("* " * printar)
     else:
-        print("* " + "  " * (numero - 2) + "*")
+        print("* " + "  " * (printar - 2) + "*")
