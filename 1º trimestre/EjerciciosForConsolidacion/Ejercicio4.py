@@ -1,5 +1,13 @@
-printar=int(input("Introduce el número que va a printar: "))
-for i in range (1, printar+1):
-    print("*")
-    if i>1 and printar<i:
-        print("")
+"""
+4. Modifica el programa anterior para que sólo pinte el borde del cuadrado
+* * * *
+*     *
+*     *
+* * * *
+"""
+numero = int(input("Introduce un número: "))
+for i in range(numero):
+    if i == 0 or i == numero - 1:
+        print("* " * numero)
+    else:
+        print("* " + "  " * (numero - 2) + "*")
